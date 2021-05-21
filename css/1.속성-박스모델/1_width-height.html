@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 블럭요소의 width, height는 auto가 기본값 */
+            /* width : 100%, height: 0 디폴트 */
+            /* 따라서 height를 설정해줘야 출력됨 */
+            width: auto;
+            height: 100px;
+            background: tomato;
+        }
+
+        span{
+            /* 인라인 요소 */
+            /* width: 0 , height: 0 디폴트*/
+            /* 인라인 요소는 기본적으로 가로, 세로 값을 가질 수 없다. */
+            /* 따라서 가로, 세로 값을 입력해도 출력X */
+            /* 텍스트를 다루는데 특화 */
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- 블럭요소 -->
+    <div></div>
+
+    <!-- 인라인 요소 -->
+    <span>인라인요소</span>
+</body>
+</html>

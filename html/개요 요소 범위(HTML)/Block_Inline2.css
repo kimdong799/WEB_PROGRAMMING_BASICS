@@ -1,0 +1,21 @@
+span{
+    background-color: gray;
+    width:100px;
+    height:100px;
+    /* 인라인 요소를 강제적으로 블럭요소로 바꿈(크기 지정 가능) */
+    display:block;
+    /* display:inline은 반대개념 */
+}
+div{
+    background-color: black;
+    color:white;
+    width:100px;
+    height:100px;
+    margin-bottom: 20px;
+}
+.ex1{
+    background-color: green;
+    width:100px;
+    height:100px;
+    display: inline;
+}

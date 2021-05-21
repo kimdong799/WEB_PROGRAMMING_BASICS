@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 브라우저 상에 red로 출력 */
+        div{
+            color: red !important
+        }
+
+        #color_yellow{
+            color: yellow;
+        }
+        div{
+            color:darkblue;
+        }
+        *{color:blue;
+        }
+        body{
+            color:violet;
+        }
+
+        /* 명시도 */
+        /* 선언순서 */
+        /* 중요도 */
+        /* !important 최우선 */
+
+    </style>
+</head>
+<body>
+
+    <!-- 우선순위 -->
+    <div id="color_yellow" class="color_green" style="color: orange;">HELLO WORLD!</div>
+</body>
+</html>

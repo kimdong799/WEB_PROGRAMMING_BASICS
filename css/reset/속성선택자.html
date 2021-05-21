@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 투명도 설정 방법1 */
+        .disabled{
+            opacity: 0.2;
+        }
+
+        /* 속성 선택자 사용, class 명 지정 X */
+        [disabled]{
+            opacity: 0.5;
+            color:red;
+        }
+
+        /* 값을 이용한 선택자 */
+        [type=password]{
+            opacity: 0.5;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" value="KIM">
+    <input type="password" value="1234">
+
+    <!-- 방법 1, class를 사용 -->
+    <input class="disabled"type="text" value="disabled text">
+
+    <!-- 방법 2, 주어진 속성을 활용, 속성 선택자 -->
+    <input type="text" value="disabled" disabled>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width:500px;
+            height:300px;
+            border:4px solid tomato;
+            margin: 20px;
+        }
+        .child{
+            /* 부모요소 내부에서 100% */
+            /* 기본값이 auto=100%로 작성하지 않아도 무방 */
+            width: 100%;
+            height: 100px;
+            background: orange;
+        }
+        /* max-width 지정*/
+
+        .child2{
+            /* width: auto */
+            max-width: 400px;
+            min-width: 200px;
+            height: 100px;
+            background: yellowgreen;
+        }
+        .child3{
+            /* min-width를 통해 부모요소 이상의 가로너비 가능 */
+            min-width: 600px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- max-width -->
+    <!-- 요소의 최대 가로 너비를 지정 -->
+    <!-- min-width -->
+    <!-- max,min- height도 존재 -->
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+
+</body>
+</html>

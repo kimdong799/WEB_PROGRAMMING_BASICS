@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    canvas는 canvas API나 WebGL API를 사용하여 그래픽이나 애니메이션을 랜더링<br><br>
+
+    canvas는 말 그대로 영역이며 그림을 그리기 위한 도화지이다<br>
+    그림을 그리기 위해서는 JS가 필요하다 <br>
+
+    <canvas id="canvas" width="200" height="150"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d')
+        ctx.fillStyle = 'rgb(200,0,0)';
+        ctx.fillRect(10, 10, 50, 50);
+        ctx.fillStyle = 'rgb(0, 0, 200, 0.5)';
+        ctx.fillRect(30, 30, 50, 50);
+    </script>
+</body>
+</html>

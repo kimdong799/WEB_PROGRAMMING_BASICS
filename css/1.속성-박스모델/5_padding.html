@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .practice {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            /* 텍스트를 이동시키기 위해 패딩 사용 */
+            padding: 20px;
+            /* 요소를 지정하니 크기가 커지는 현상 발생 */
+            /* 가로 세로 사이즈가 100+ 20+ 20 = 140으로 바뀜  */
+        }
+
+        /*  크기가 커지지 않도록 직접 계산 필요 */
+        /* 100 * 100 요소 만들기 */
+        .box {
+            /* + 40 px */
+            width: 60px; 
+            /* + 20 px */
+            height: 80px;
+            background: cyan;
+            /* 속기 형태 상하, 좌우 */
+            padding: 10px 20px;
+        }
+
+        /* 자동 계산 방법 */
+        .auto-cal-box {
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            /* 속기 형태 상하, 좌우 */
+            padding: 10px 20px;
+            /* 아래의 코드로 자동 계산 가능 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 내부여백 지정 -->
+    <!-- margin중복 개념과 같이 padding에도 크기 증가라는 현상 존재 -->
+    <!-- 추가된 padding값 만큼 요소의 크기가 커지는 현상 -->
+
+    <div class="practice">Hello Kim!</div>
+
+    <div class="box"></div>
+    <div class="auto-cal-box"></div>
+</body>
+
+</html>

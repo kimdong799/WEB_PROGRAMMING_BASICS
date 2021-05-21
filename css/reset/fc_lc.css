@@ -1,0 +1,40 @@
+.fruits li:first-child{
+    color:red;
+}
+.fruits li:last-child{
+    color: blue;
+}
+.fruits li:nth-child(2){
+    font-weight: bold;
+    color: green;
+}
+.fruits li:nth-child(2n){
+    font-weight: bold;
+    color: yellowgreen;
+}
+.fruits li:nth-child(n+2){
+    background: lightblue;
+}
+
+/* 아래의 경우 오른쪽에서 왼쪽으로 해석하는 것이 정확 */
+/* .childs의 1번째 자식요소는 div태그로 오류발생 */
+.childs p:nth-child(1){
+    color: tomato;
+}
+/* 아래의 코드는 동작함. */
+.childs p:nth-child(2){
+    color: tomato;
+}
+
+/* .box-group에 해당하는 모든 첫번째 후손요소 */
+.box-group div:first-child{
+    color: tomato;
+}
+
+/* 첫번째 자식요소만 해당 */
+.box-group > div:first-child{
+    color: blue;
+}
+
+
+

@@ -1,0 +1,35 @@
+.box{
+    width: 300px;
+    /* 요소의 가로너비 */
+    height: 200px;
+    /* 요소의 세로너비 */
+    border:1px solid black;
+    /* 요소의 선 */
+    background: red;
+     /*요소의 배경색상:red; */
+    font-size: 20px;
+    /* 폰트 크기 디폴트=16px*/
+    color: yellow;
+    /* 폰트 컬러 */
+    
+    /* 요소 바깥 여백 상하좌우(단축속성)*/
+    margin: 20px;
+    /* 요소 바깥 여백 방향 (개별속성)*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20ox;
+    margin-right: 20px;
+
+    /* 요소의 내부 여백 (단축속성)*/
+    padding: 20px;
+    /* 요소의 내부 여백 (개별속성) */
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    /* 글자 색상 */
+    color: tomato;
+    /* 배경색상 지정 */
+    background-color: turquoise;
+}

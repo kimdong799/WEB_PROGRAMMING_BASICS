@@ -1,0 +1,11 @@
+input{
+    width:200px;
+    outline:none;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+input:focus{
+    border-color:red;
+    width:300px;
+}

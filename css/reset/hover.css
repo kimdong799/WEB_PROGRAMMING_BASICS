@@ -1,0 +1,106 @@
+#box1{
+    width: 100px;
+    height: 30px;
+    background: red;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box2{
+    width: 100px;
+    height: 30px;
+    background: orange;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box3{
+    width: 100px;
+    height: 30px;
+    background: yellow;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box4{
+    width: 100px;
+    height: 30px;
+    background: green;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box5{
+    width: 100px;
+    height: 30px;
+    background: blue;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box6{
+    width: 100px;
+    height: 30px;
+    background: darkblue;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#box7{
+    width: 100px;
+    height: 30px;
+    background: purple;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#box1:hover{
+    width: 200px;
+    height: 30px;
+    background: red;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box2:hover{
+    width: 200px;
+    height: 30px;
+    background: orange;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box3:hover{
+    width: 200px;
+    height: 30px;
+    background: yellow;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box4:hover{
+    width: 200px;
+    height: 30px;
+    background: green;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box5:hover{
+    width: 200px;
+    height: 30px;
+    background: blue;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box6:hover{
+    width: 200px;
+    height: 30px;
+    background: darkblue;
+    border-radius: 20px;
+    margin: 5px;
+}
+#box7:hover{
+    width: 200px;
+    height: 30px;
+    background: purple;
+    border-radius: 20px;
+    margin: 5px;
+}

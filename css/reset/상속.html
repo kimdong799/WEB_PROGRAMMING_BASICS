@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ecosystem{
+            color:red;
+        }
+
+        .parent{
+            font-size: 30px;
+            color: blue;
+            opacity: 80%;
+            position: absolute;
+        }
+        .child{
+            position: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 모든 하위 요소들에게도 영향을 미친다.-> 상속 -->
+    <!-- css의 모든 속성에 적용X -->
+    <!-- 기본적으로 Text를 다루는 속성들이 상속 가능 -->
+
+
+    <div class="ecosystem">생태계
+        <div class="animal">동물
+            <div class="tiget">호랑이</div>
+            <div class="lion">사자</div>
+            <div class="elephant">코끼리</div>
+        </div>
+        <div class="plant">식물</div>
+    </div>
+
+    <!-- 강제상속 -->
+    <div class="parent">Parent
+        <div class="child">Child</div>
+    </div>
+
+</body>
+
+</html>

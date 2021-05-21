@@ -1,0 +1,17 @@
+/* 초기화 */
+/* 다양한 브라우저에서 출력되는 스타일이 다를 수 있다.  */
+/* 따라서 표준화가 필요, 초기화가 필요 */
+/* reset.css를 사용 */
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 100px;
+    transition:0.4s;
+}
+
+.box:hover{
+    width:200px;
+    height:200px;
+}

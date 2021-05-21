@@ -1,0 +1,10 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    transition: 0.4s;
+}
+.box:active{
+    width:200px;
+    background: yellowgreen;
+}

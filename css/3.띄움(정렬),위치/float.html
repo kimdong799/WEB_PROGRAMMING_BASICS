@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {}
+
+        article .picture {
+            width: 200px;
+            height: 150px;
+            background: tomato;
+            /* picture 요소를 문단 왼쪽으로 위치 */
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        article .text {
+            /* 새로운 단락으로 이동 */
+            clear: left;
+        }
+
+        .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin: 5px;
+        }
+
+        .box2 {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            margin: 5px;
+        }
+        .box3{
+            /* 새로운 요소가 겹쳐서 나타남 */
+            /* 이 떄 clear가 사용 */
+            width: 200px;
+            height: 150px;
+            background: red;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- float은 요소를 띄우는 개념 -->
+    <!-- 많은 경우에 float을 수평정렬 하는 개념으로 더 많이 사용 -->
+    <!-- css3에는 flex 기능 추가, 따라서 flex box를 이용한 수평정렬을 더 많이 사용 -->
+
+    <article>
+        <div class="picture"></div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+        <div class="text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.</div>
+    </article>
+    <br><br><br>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <div class="box2">a</div>
+    <div class="box2">b</div>
+    <div class="box2">c</div>
+
+    <div class="box3">new box</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 250px;
+            border: 4px solid;
+            overflow: auto;
+        }
+        .parent .child{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 요소의 크기 이상으로 내용이 넘쳤을 때 내용이 보여짐을 제어 -->
+    <!-- visible, hidden, scroll(강제), auto(자동) -->
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+
+</html>

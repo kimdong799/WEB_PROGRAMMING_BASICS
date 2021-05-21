@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .fruits의 자식 중 p태그들 중에 첫번째 */
+        .fruits p:nth-of-type(1){
+            color: red;
+        }
+
+        .fruits li:nth-of-type(1){
+            color: red;
+        }
+
+        /* .나 를 제외한 속성에 대해 색상 적용 */
+        .list li:not(.나){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fruits">
+        <div>딸기</div>
+        <p>사과</p>
+        <p>망고</p>
+        <span>오렌지</span>
+    </div>
+
+    <ul class="fruits">
+        <li>오렌지</li>
+        <li class="red">딸기</li>
+        <li>망고</li>
+        <li class="red">사과</li>
+    </ul>
+
+    <ul class="list">
+        <li>가</li>
+        <li class="나">나</li>
+        <li>다</li>
+    </ul>
+
+</body>
+</html>

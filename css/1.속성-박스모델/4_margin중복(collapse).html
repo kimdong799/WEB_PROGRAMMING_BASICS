@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 500px;
+            height: 200px;
+            background: cyan;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            /* 부모, 자식 margin 중복 */
+            margin-top: 50px;
+            
+        }
+
+        .p{
+            width: 500px;
+            height: 200px;
+            background: green;
+        }
+
+        .c{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            position: relative;
+            top: 50px;
+        }
+
+        /* 형제요소 top-bottom은 중복현상 발생 */
+        .child2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 마진의 특정 값들이 중복되어 합쳐지는 현상 -->
+    <!-- 형제 요소들의 margin-top과 margin-bottom이 만났을 때 -->
+    <!-- 부모 요소의 margin-top과 자식요소의 margin-top이 만났을 때 -->
+    <!-- 부모 요소의 margin-bottom과 자식요소의 margin-bottom이 만났을 때 -->
+    <!-- 마진 중복은 버그가 아님. 현상을 우회하거나 응용 가능 -->
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+    <div class="p">
+        <div class="c"></div>
+    </div>
+
+    <div class="child2"></div>
+    <div class="child2"></div>
+    <div class="child2"></div>
+</body>
+
+</html>
